@@ -1,7 +1,9 @@
 # Owner Views
 from rest_framework.views import APIView
-from rest_framework.response import Response
-
-class NewClass(APIView):
+from django.shortcuts import render
+    
+# AdminHomePage
+class AdminHome(APIView):
     def get(self, request):
-        return Response({"message": "this is the owner's page"})
+        context = {}
+        return render(request, 'admin_home.html', context)

@@ -1,7 +1,7 @@
 # Client Urls
 from django.urls import path
-from .views import HelloWorldAPIView
+from .views import Home
 
 urlpatterns = [
-    path('api/helloworld', HelloWorldAPIView.as_view(), name="hello world"),
+    path('', Home.as_view(), name="home"),
 ]

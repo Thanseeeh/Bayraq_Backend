@@ -1,7 +1,7 @@
 # Owner Urls
 from django.urls import path
-from .views import NewClass
+from .views import AdminHome
 
 urlpatterns = [
-    path('api/newclass', NewClass.as_view(), name="newclass"),
+    path('', AdminHome.as_view(), name="admin"),
 ]
